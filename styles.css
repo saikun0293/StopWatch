@@ -1,0 +1,85 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+/* Color palette */
+/* #eeeeee */
+/* #393e46 */
+/* #76ead7 */
+/* #c4fb6d */
+
+
+body{
+    margin:0;
+    font-family:"Roboto";
+    background-color: #76ead7;
+}
+
+.title{
+    font-size:3rem;
+    font-weight:100;
+    background-color:#42a6f4;
+    display:flex;
+    align-items:center;
+    color:white;
+    border:2px solid black;
+}
+
+.container{
+    height:200px;
+    width:700px;
+    background-color:#393e46;
+    border-radius:20px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin:100px auto 30px;
+    border:10px solid #eeeeee;
+}
+
+.unit{
+    text-align:center;
+    color:#c4fb6d;
+    width:160px;
+    font-size:100px;
+}
+
+.colon{
+    color:white;
+    font-size:100px;
+    padding-bottom:10px;
+}
+
+.btn-container{
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+.btn{
+    display:inline-block;
+    border:1.5px solid #eeeeee;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    font-weight:500;
+    font-size:20px;
+    background-color:#393e46;
+    color:#eeeeee;
+    margin:20px;
+    outline:none;
+}
+
+.btn:hover{
+    background-color:#eeeeee;
+    color:#393e46;
+    border:1px solid #393e46;
+}
+
+.btn:focus{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+
