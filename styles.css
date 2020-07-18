@@ -145,10 +145,18 @@ body{
     .colon{
         font-size:50px;
     }
+
+    .lap-container{
+        width:70%;
+    }
 }
 
 @media only screen and (max-width:470px){
     img{
-        width:50%
+        width:50%;
+    }
+
+    .header{
+        padding:10px;
     }
 }
