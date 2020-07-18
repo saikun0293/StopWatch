@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* Color palette */
 /* #eeeeee */
@@ -10,7 +10,8 @@
 
 body{
     margin:0;
-    font-family:"Roboto";
+    font-family:"Montserrat";
+    font-weight:100;
     background-color: #76ead7;
 }
 
@@ -63,12 +64,12 @@ body{
     width:80px;
     height:80px;
     border-radius: 50%;
-    font-weight:500;
     font-size:20px;
     background-color:#393e46;
     color:#eeeeee;
     margin:20px;
     outline:none;
+    font-family:"Montserrat"!important;
 }
 
 .btn:hover{
@@ -81,6 +82,50 @@ body{
     width:80px;
     height:80px;
     border-radius: 50%;
+}
+
+.lap-container{
+    background-color: #eeeeee;
+    width:50%;
+    margin:20px auto;
+    border-radius:20px;
+    border:2px solid #393e46;
+}
+
+.header{
+    padding:20px 30px 20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.lap-title{
+    font-size:30px;
+    font-weight:500;
+    color:grey;
+    margin-left:20px;
+}
+
+.clear-btn{
+    outline:none;
+    font-family:"Montserrat"!important;
+    font-weight:300!important;
+    font-size:20px;
+    background-color: #393e46;
+    color:#eeeeee;
+    border-radius:10px;
+}
+
+.clear-btn:hover{
+    background-color:#eeeeee;
+    color:#393e46;
+    border:2px solid #393e46;
+}
+
+.lap{
+    letter-spacing: 2px;
+    font-size:20px;
+    margin-left:20px;
+    line-height:2;
 }
 
 @media only screen and (max-width:745px){

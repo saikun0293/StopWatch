@@ -3,10 +3,15 @@ let hours=document.getElementById("hours")
     seconds=document.getElementById("seconds")
     milliseconds=document.getElementById("milliseconds");
 
+let lapContainer=document.getElementById("lapsData");
 
 document.getElementById("start").addEventListener("click",start);
 document.getElementById("stop").addEventListener("click",stop);
 document.getElementById("reset").addEventListener("click",reset);
+document.getElementById("clear").addEventListener("click",function(){
+    lapContainer.innerHTML="";
+});
+
 
 let [h,m,s,ms]=[0,0,0,0];
 
@@ -39,6 +44,7 @@ function run(){
 }
 
 function displayTime(){
+    // console.log(h+':'+m+':'+s+':'+ms);
     hours.innerHTML=(h<10?'0'+h:h);
     minutes.innerHTML=(m<10?'0'+m:m);
     seconds.innerHTML=(s<10?'0'+s:s);
@@ -51,6 +57,16 @@ function reset(){
 }
 
 function stop(){
+    lap();
     clearInterval(timer);
     timerRunning=false;
 }
+
+function showTime(){
+    let txt=(h<10?'0'+h:h)+':'+(m<10?'0'+m:m)+':'+(s<10?'0'+s:s)+':'+(ms<10?'0'+(ms-1):ms-1);//-1 because we already incremented one in the run function for the next round of setInterval
+    return txt;
+}
+function lap(){
+    lapContainer.innerHTML+="<li class='lap'>"+showTime()+"</li>"
+}
+
